@@ -32,6 +32,9 @@
                             <constraint firstItem="bA2-Ez-jK8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oab-BX-8vN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myDraw" destination="bA2-Ez-jK8" id="IFO-n0-J0s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

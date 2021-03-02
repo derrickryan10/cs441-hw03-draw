@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Draw : UIView
 @property (nonatomic) float x, y;
 @property (nonatomic) int count;
+-(void)animation;
 @end
 
 NS_ASSUME_NONNULL_END

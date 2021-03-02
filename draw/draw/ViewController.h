@@ -6,9 +6,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Draw.h"
 
 @interface ViewController : UIViewController
-
-
+@property(nonatomic, strong) CADisplayLink *link;
+@property(nonatomic, strong) IBOutlet Draw *myDraw;
 @end
 

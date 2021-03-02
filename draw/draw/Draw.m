@@ -39,4 +39,10 @@
     }
 }
 
+-(void)animation{
+    x += 2;
+    y += 2;
+    [self setNeedsDisplay];
+}
+
 @end
