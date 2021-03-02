@@ -14,6 +14,7 @@
 		4904B86C25EDB6F900FB1C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4904B86B25EDB6F900FB1C18 /* Assets.xcassets */; };
 		4904B86F25EDB6F900FB1C18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4904B86D25EDB6F900FB1C18 /* LaunchScreen.storyboard */; };
 		4904B87225EDB6F900FB1C18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4904B87125EDB6F900FB1C18 /* main.m */; };
+		4904B88025EDBBF000FB1C18 /* Draw.m in Sources */ = {isa = PBXBuildFile; fileRef = 4904B87F25EDBBF000FB1C18 /* Draw.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		4904B86E25EDB6F900FB1C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4904B87025EDB6F900FB1C18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4904B87125EDB6F900FB1C18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4904B87E25EDBBF000FB1C18 /* Draw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Draw.h; sourceTree = "<group>"; };
+		4904B87F25EDBBF000FB1C18 /* Draw.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Draw.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				4904B86325EDB6F700FB1C18 /* SceneDelegate.m */,
 				4904B86525EDB6F700FB1C18 /* ViewController.h */,
 				4904B86625EDB6F700FB1C18 /* ViewController.m */,
+				4904B87E25EDBBF000FB1C18 /* Draw.h */,
+				4904B87F25EDBBF000FB1C18 /* Draw.m */,
 				4904B86825EDB6F700FB1C18 /* Main.storyboard */,
 				4904B86B25EDB6F900FB1C18 /* Assets.xcassets */,
 				4904B86D25EDB6F900FB1C18 /* LaunchScreen.storyboard */,
@@ -145,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4904B88025EDBBF000FB1C18 /* Draw.m in Sources */,
 				4904B86725EDB6F700FB1C18 /* ViewController.m in Sources */,
 				4904B86125EDB6F700FB1C18 /* AppDelegate.m in Sources */,
 				4904B87225EDB6F900FB1C18 /* main.m in Sources */,
@@ -294,6 +300,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AD9479577H;
 				INFOPLIST_FILE = draw/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AD9479577H;
 				INFOPLIST_FILE = draw/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
