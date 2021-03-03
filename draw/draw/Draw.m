@@ -19,7 +19,7 @@
     
     //background color
     if(count % 3 == 0)
-        [[UIColor blackColor] setFill];
+        [[UIColor systemPinkColor] setFill];
     else
         [[UIColor blueColor] setFill];
     CGContextFillRect(context, bounds);
@@ -37,6 +37,16 @@
     else
         [[UIColor greenColor] setFill];
     CGContextFillRect(context, CGRectMake(x2, y2, 50, 50));
+    
+    //draw line
+    [[UIColor yellowColor] setFill];
+    CGContextBeginPath(context);
+    CGContextMoveToPoint(context, 10, 500);
+    CGContextAddLineToPoint(context, 100, 300);
+    CGContextAddLineToPoint(context, 200, 200);
+    CGContextAddLineToPoint(context, 300, 300);
+    CGContextAddLineToPoint(context, 400, 400);
+    CGContextStrokePath(context);
     
 }
 
