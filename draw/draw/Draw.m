@@ -21,31 +21,29 @@
     if(count % 3 == 0)
         [[UIColor systemPinkColor] setFill];
     else
-        [[UIColor blueColor] setFill];
+        [[UIColor yellowColor] setFill];
     CGContextFillRect(context, bounds);
     
     //circle
     if(count % 2 == 0)
-        [[UIColor redColor] setFill];
+        [[UIColor blackColor] setFill];
     else
-        [[UIColor yellowColor] setFill];
+        [[UIColor blueColor] setFill];
     CGContextFillEllipseInRect(context, CGRectMake(x1, y1, 50, 50));
     
     //rectangle
     if(count % 2 == 0)
-        [[UIColor orangeColor] setFill];
+        [[UIColor purpleColor] setFill];
     else
         [[UIColor greenColor] setFill];
     CGContextFillRect(context, CGRectMake(x2, y2, 50, 50));
     
-    //draw line
-    [[UIColor yellowColor] setFill];
+    //triangle with lines
     CGContextBeginPath(context);
-    CGContextMoveToPoint(context, 10, 500);
-    CGContextAddLineToPoint(context, 100, 300);
+    CGContextMoveToPoint(context, 25, 400);
     CGContextAddLineToPoint(context, 200, 200);
-    CGContextAddLineToPoint(context, 300, 300);
-    CGContextAddLineToPoint(context, 400, 400);
+    CGContextAddLineToPoint(context, 300, 400);
+    CGContextAddLineToPoint(context, 25, 400);
     CGContextStrokePath(context);
     
 }
@@ -65,13 +63,13 @@
 
 //animate shapes
 -(void)animation{
-    if(count % 3 == 0){
-        y1 += 3;
-        y2 -= 3;
+    if(count % 2 == 0){
+        y1 += 4;
+        y2 -= 4;
     }
     else{
-        x1 -= 3;
-        x2 += 3;
+        x1 -= 4;
+        x2 += 4;
     }
     [self setNeedsDisplay];
 }
